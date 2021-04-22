@@ -1,0 +1,976 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="898,787" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="21">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="19">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart sap:VirtualizedContainerService.HintSize="634,722" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">260,12.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">260,50 230,50 230,-10 350,-10 350,133 230,133</av:PointCollection>
+        <x:Double x:Key="Height">685.5</x:Double>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID2</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">30,100</av:Point>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Native Citrix" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window ' Shell_tra'" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="3393cc1a7ce192ebdc5b8797e6b1c8cf" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' /&gt;">
+          <ui:WindowScope.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition OffsetX="32" OffsetY="16" Position="TopLeft" />
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="3df8f796ddacd1651726d249d0940e54" Selector="&lt;wnd cls='MSTaskSwWClass' title='Running applications' /&gt;&lt;wnd cls='MSTaskListWClass' title='Running applications' /&gt;&lt;ctrl name='Running applications' role='tool bar' /&gt;&lt;ctrl automationid='Microsoft.Windows.RemoteDesktop' idx='2' name='Remote Desktop Connection – 1 running window' role='push button' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+              </Sequence>
+            </ActivityAction>
+          </ui:WindowScope.Body>
+        </ui:WindowScope>
+        <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'Vm1 52142 Tscshellc'" sap:VirtualizedContainerService.HintSize="434,1150" sap2010:WorkflowViewState.IdRef="WindowScope_2" InformativeScreenshot="94f9d3afeb7b37ab8ebd7b02ba2d7ed9" Selector="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;">
+          <ui:WindowScope.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1004" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IHWindowClass'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_RIGHT" SendWindowMessages="False" SimulateClick="False">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition OffsetX="367" OffsetY="338" Position="TopLeft" />
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="4c872bbce99a4e591dbd8fdb3cca7144" Selector="&lt;wnd aaname='Horizontal' cls='UIMainClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IHWindowClass'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_RIGHT" SendWindowMessages="False" SimulateClick="False">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition OffsetX="390" OffsetY="555" Position="TopLeft" />
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="9af7e924bd6ddf8b91d28d11d3a535ba" Selector="&lt;wnd aaname='Horizontal' cls='UIMainClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IHWindowClass'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition OffsetX="595" OffsetY="557" Position="TopLeft" />
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="51cb77315f832410e49c29ebb707f91b" Selector="&lt;wnd aaname='Horizontal' cls='UIMainClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IHWindowClass'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition OffsetX="335" OffsetY="249" Position="TopLeft" />
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a7478270d474a941fc737f6adec337d5" Selector="&lt;wnd aaname='Horizontal' cls='UIMainClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'IHWindowClass'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="False" Text="test">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a7478270d474a941fc737f6adec337d5" Selector="&lt;wnd aaname='Horizontal' cls='UIMainClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'IHWindowClass'" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+                  <ui:SendHotkey.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a7478270d474a941fc737f6adec337d5" Selector="&lt;wnd aaname='Horizontal' cls='UIMainClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:SendHotkey.Target>
+                </ui:SendHotkey>
+              </Sequence>
+            </ActivityAction>
+          </ui:WindowScope.Body>
+        </ui:WindowScope>
+      </Sequence>
+    </FlowStep>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">30,200</av:Point>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'Vm1 52142 Tscshellc'" sap:VirtualizedContainerService.HintSize="434,906" sap2010:WorkflowViewState.IdRef="WindowScope_3" InformativeScreenshot="c5bbbd053adb727f785695b0d6b5323c" Selector="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;">
+          <ui:WindowScope.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,760" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IHWindowClass'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition OffsetX="400" OffsetY="315" Position="TopLeft" />
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="aa7daf7c3ebeb2032ffb318b99250e9f" Selector="&lt;wnd aaname='Horizontal' cls='UIMainClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'IHWindowClass'" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="n" KeyModifiers="Ctrl, Shift" SpecialKey="False">
+                  <ui:SendHotkey.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="741b39e0cfe99c705c3362dfb5943c5f" Selector="&lt;wnd aaname='Horizontal' cls='UIMainClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:SendHotkey.Target>
+                </ui:SendHotkey>
+                <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'IHWindowClass'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="False" SimulateType="False" Text="trlak">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="811d4c208761ba304d4fdf0eafae03b1" Selector="&lt;wnd aaname='Horizontal' cls='UIMainClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'IHWindowClass'" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
+                  <ui:SendHotkey.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="741b39e0cfe99c705c3362dfb5943c5f" Selector="&lt;wnd aaname='Horizontal' cls='UIMainClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:SendHotkey.Target>
+                </ui:SendHotkey>
+              </Sequence>
+            </ActivityAction>
+          </ui:WindowScope.Body>
+        </ui:WindowScope>
+      </Sequence>
+    </FlowStep>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">30,300</av:Point>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_7">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="ui:GenericValue" Name="CopySelectedText" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'Vm1 52142 Tscshellc'" sap:VirtualizedContainerService.HintSize="434,825" sap2010:WorkflowViewState.IdRef="WindowScope_4" InformativeScreenshot="57678f104193427f790a723d7b5beca4" Selector="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;">
+          <ui:WindowScope.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,679" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'mstsc.exe vm1'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                  <ui:ClickImage.CursorPosition>
+                    <ui:CursorPosition OffsetX="0" OffsetY="0" Position="Center" />
+                  </ui:ClickImage.CursorPosition>
+                  <ui:ClickImage.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAANSURBVBhXY2BgYPgPAAEEAQBwIGULAAAAAElFTkSuQmCC" />
+                  </ui:ClickImage.Image>
+                  <ui:ClickImage.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:ClickImage.Target>
+                </ui:ClickImage>
+                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IHWindowClass'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition OffsetX="-264" OffsetY="-194" Position="Center" />
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1f30567b9e9a4c1725338694d79ca19c" Selector="&lt;wnd aaname='Horizontal' cls='UIMainClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'UIContainerClass'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="%[k(end)d(shift)d(home)u(shift)u(home)]">
+                  <ui:TypeInto.Target>
+                    <ui:Target Element="{x:Null}" InformativeScreenshot="7a9caae9521256a106c0635c65e38df7" Selector="&lt;wnd aaname='Horizontal' cls='UIMainClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd cls='UIContainerClass' /&gt;">
+                      <ui:Target.ClippingRegion>
+                        <ui:Region Rectangle="193, 180, 32, 26" />
+                      </ui:Target.ClippingRegion>
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:CopySelectedText SendWindowMessages="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Copy selected text" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="CopySelectedText_1">
+                  <ui:CopySelectedText.Result>
+                    <OutArgument x:TypeArguments="ui:GenericValue">[CopySelectedText]</OutArgument>
+                  </ui:CopySelectedText.Result>
+                </ui:CopySelectedText>
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[CopySelectedText]" />
+              </Sequence>
+            </ActivityAction>
+          </ui:WindowScope.Body>
+        </ui:WindowScope>
+      </Sequence>
+    </FlowStep>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">30,500</av:Point>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_11">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="ui:GenericValue" Name="Uicontainerclass" />
+          <Variable x:TypeArguments="ui:GenericValue" Name="CopySelectedText" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'Vm1 52142 Tscshellc'" sap:VirtualizedContainerService.HintSize="434,679" sap2010:WorkflowViewState.IdRef="WindowScope_6" InformativeScreenshot="dbaf5b101d84fe054354de899c521906" Selector="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;">
+          <ui:WindowScope.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,533" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IHWindowClass'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition OffsetX="434" OffsetY="196" Position="TopLeft" />
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="fbe2ac9b4cc66eda783d235ba9eb6eac" Selector="&lt;wnd aaname='Horizontal' cls='UIMainClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'UIContainerClass'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="%[k(end)d(shift)d(home)u(shift)u(home)]">
+                  <ui:TypeInto.Target>
+                    <ui:Target Element="{x:Null}" InformativeScreenshot="270b7a5079cd1291fe5b9d54a3e1381f" Selector="&lt;wnd aaname='Horizontal' cls='UIMainClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd cls='UIContainerClass' /&gt;">
+                      <ui:Target.ClippingRegion>
+                        <ui:Region Rectangle="622, 240, 75, 22" />
+                      </ui:Target.ClippingRegion>
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:CopySelectedText SendWindowMessages="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Copy selected text" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="CopySelectedText_2">
+                  <ui:CopySelectedText.Result>
+                    <OutArgument x:TypeArguments="ui:GenericValue">[CopySelectedText]</OutArgument>
+                  </ui:CopySelectedText.Result>
+                </ui:CopySelectedText>
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[CopySelectedText]" />
+              </Sequence>
+            </ActivityAction>
+          </ui:WindowScope.Body>
+        </ui:WindowScope>
+      </Sequence>
+    </FlowStep>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">30,600</av:Point>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Image" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_13">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'ExpenseIt Hwndwrapp'" sap:VirtualizedContainerService.HintSize="434,1948" sap2010:WorkflowViewState.IdRef="WindowScope_7" InformativeScreenshot="f1d2e586e9646251c6f9e7602fb01672" Selector="&lt;wnd app='expenseit.exe' cls='HwndWrapper*' title='ExpenseIt Standalone' /&gt;">
+          <ui:WindowScope.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1802" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ClickOCRText ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click OCR Text 'ExpenseIt.exe ExpenseIt'" sap:VirtualizedContainerService.HintSize="334,201" sap2010:WorkflowViewState.IdRef="ClickOCRText_1" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" SendWindowMessages="False" Text="Email">
+                  <ui:ClickOCRText.CursorPosition>
+                    <ui:CursorPosition OffsetX="11" OffsetY="4" Position="TopLeft" />
+                  </ui:ClickOCRText.CursorPosition>
+                  <ui:ClickOCRText.OCREngine>
+                    <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                      <ActivityFunc.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                      </ActivityFunc.Argument>
+                      <ui:MicrosoftOCR FilterRegion="{x:Null}" Output="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Microsoft OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MicrosoftOCR_1" Image="[Image]" Language="English (United Kingdom)" Profile="Screen" Scale="2" />
+                    </ActivityFunc>
+                  </ui:ClickOCRText.OCREngine>
+                  <ui:ClickOCRText.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="77d6c66033eabc2f829dfe49962f6995" Selector="&lt;ctrl name='Email:' role='text' /&gt;&lt;ctrl name='_Email:' role='text' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:ClickOCRText.Target>
+                </ui:ClickOCRText>
+                <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'ExpenseIt.exe ExpenseIt'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_5" SendWindowMessages="False" SimulateType="False" Text="training@uipath.com">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" InformativeScreenshot="f3eca3959abb377e047ee943385cd9ad">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'ExpenseIt.exe ExpenseIt'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                  <ui:ClickImage.CursorPosition>
+                    <ui:CursorPosition OffsetX="64" OffsetY="11" Position="TopRight" />
+                  </ui:ClickImage.CursorPosition>
+                  <ui:ClickImage.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                  </ui:ClickImage.Image>
+                  <ui:ClickImage.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:ClickImage.Target>
+                </ui:ClickImage>
+                <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'ExpenseIt.exe ExpenseIt'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_6" SendWindowMessages="False" SimulateType="False" Text="1323">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" InformativeScreenshot="23c9204bfef6ad2bc2ce3f927c8ea173">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'ExpenseIt.exe ExpenseIt'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                  <ui:ClickImage.CursorPosition>
+                    <ui:CursorPosition OffsetX="43" OffsetY="8" Position="TopRight" />
+                  </ui:ClickImage.CursorPosition>
+                  <ui:ClickImage.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                  </ui:ClickImage.Image>
+                  <ui:ClickImage.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:ClickImage.Target>
+                </ui:ClickImage>
+                <ui:ClickOCRText ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click OCR Text 'ExpenseIt.exe ExpenseIt'" sap:VirtualizedContainerService.HintSize="334,201" sap2010:WorkflowViewState.IdRef="ClickOCRText_2" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" SendWindowMessages="False" Text="Sales">
+                  <ui:ClickOCRText.CursorPosition>
+                    <ui:CursorPosition OffsetX="149" OffsetY="240" Position="TopLeft" />
+                  </ui:ClickOCRText.CursorPosition>
+                  <ui:ClickOCRText.OCREngine>
+                    <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                      <ActivityFunc.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                      </ActivityFunc.Argument>
+                      <ui:MicrosoftOCR FilterRegion="{x:Null}" Output="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Microsoft OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MicrosoftOCR_2" Image="[Image]" Language="[Nothing]" Profile="Screen" Scale="1" />
+                    </ActivityFunc>
+                  </ui:ClickOCRText.OCREngine>
+                  <ui:ClickOCRText.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" InformativeScreenshot="6358abf0e2e0d993d1873761d5aa7d02">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:ClickOCRText.Target>
+                </ui:ClickOCRText>
+                <ui:ClickOCRText ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click OCR Text 'ExpenseIt.exe ExpenseIt'" sap:VirtualizedContainerService.HintSize="334,201" sap2010:WorkflowViewState.IdRef="ClickOCRText_3" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" SendWindowMessages="False" Text="CSG">
+                  <ui:ClickOCRText.CursorPosition>
+                    <ui:CursorPosition OffsetX="0" OffsetY="0" Position="TopLeft" />
+                  </ui:ClickOCRText.CursorPosition>
+                  <ui:ClickOCRText.OCREngine>
+                    <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                      <ActivityFunc.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                      </ActivityFunc.Argument>
+                      <ui:MicrosoftOCR FilterRegion="{x:Null}" Output="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Microsoft OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MicrosoftOCR_3" Image="[Image]" Language="[Nothing]" Profile="Screen" Scale="1" />
+                    </ActivityFunc>
+                  </ui:ClickOCRText.OCREngine>
+                  <ui:ClickOCRText.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" InformativeScreenshot="0d288ad524fcc07423308adf0590a0d9">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:ClickOCRText.Target>
+                </ui:ClickOCRText>
+                <ui:ClickOCRText ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click OCR Text 'ExpenseIt.exe ExpenseIt'" sap:VirtualizedContainerService.HintSize="334,201" sap2010:WorkflowViewState.IdRef="ClickOCRText_4" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" SendWindowMessages="False" Text="Tea">
+                  <ui:ClickOCRText.CursorPosition>
+                    <ui:CursorPosition OffsetX="0" OffsetY="0" Position="TopLeft" />
+                  </ui:ClickOCRText.CursorPosition>
+                  <ui:ClickOCRText.OCREngine>
+                    <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                      <ActivityFunc.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                      </ActivityFunc.Argument>
+                      <ui:MicrosoftOCR FilterRegion="{x:Null}" Output="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Microsoft OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MicrosoftOCR_4" Image="[Image]" Language="[Nothing]" Profile="Screen" Scale="1" />
+                    </ActivityFunc>
+                  </ui:ClickOCRText.OCREngine>
+                  <ui:ClickOCRText.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" InformativeScreenshot="6c5deb77f462119b0811ef5663b5f437">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:ClickOCRText.Target>
+                </ui:ClickOCRText>
+                <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'ExpenseIt.exe ExpenseIt'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_7" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                  <ui:ClickImage.CursorPosition>
+                    <ui:CursorPosition OffsetX="4" OffsetY="3" Position="Center" />
+                  </ui:ClickImage.CursorPosition>
+                  <ui:ClickImage.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                  </ui:ClickImage.Image>
+                  <ui:ClickImage.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:ClickImage.Target>
+                </ui:ClickImage>
+              </Sequence>
+            </ActivityAction>
+          </ui:WindowScope.Body>
+        </ui:WindowScope>
+      </Sequence>
+    </FlowStep>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">370,116.04</av:Point>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="advanced image automation" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_14">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="ui:UiElement" Name="elem" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:WaitImageAppear DisplayName="Find Image 'mstsc.exe vm1'" FoundElement="[elem]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitImageAppear_1">
+          <ui:WaitImageAppear.Image>
+            <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFsSURBVEhL7ZI9S8NAGMcF7Sdw1H4AndruTtpdpOk3sN0d8gFEOit2F7LoUi10ETTuagYHC4mLDm0EB4VUF4n9+zy5vDWvYjs4+IOHy13ufve/XOYwA+wvG7ZNRe1MhGH+hdOTKjQMA7IsoyZJkOp1KIrivskmUahpGuYLBSxEijfII1HYaDYdwUa1Cl3X/f5ysejOSCdRaJqmk1JVVZx1u86RvZR5JAr5+5UqFV8SrjwShV4ilnLaw3Z7OqG3eK/VcvrbjYY/ZlmWM5ZGorBULvsCvpjwjXPaLALhh+k+iN9miW6UBdyypEafYZ3ko9dnjHX6J292REUIhL1V4E13OxlcbQnR3S5wHD9gMDK8BE6oe02TR0HaGO9D4LEjNu8suoMBk1s8nQop1/maSNHfB+6p+geUblOk4nkcgN9HmBQyL7diIUt5MdXYbdFbAQYXYt4n3TZXhLjQg4/0cBQkHFCiH5Au/CV/XQh8Az29g2mp0K0aAAAAAElFTkSuQmCC" />
+          </ui:WaitImageAppear.Image>
+          <ui:WaitImageAppear.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:WaitImageAppear.Target>
+        </ui:WaitImageAppear>
+        <ui:Highlight HighlightTime="{x:Null}" Color="Gold" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Highlight_1">
+          <ui:Highlight.Target>
+            <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[elem]">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:Highlight.Target>
+        </ui:Highlight>
+        <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'mstsc.exe vm1'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_8" KeyModifiers="None" MouseButton="BTN_LEFT">
+          <ui:ClickImage.CursorPosition>
+            <ui:CursorPosition Position="Center">
+              <ui:CursorPosition.OffsetX>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:CursorPosition.OffsetX>
+              <ui:CursorPosition.OffsetY>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:CursorPosition.OffsetY>
+            </ui:CursorPosition>
+          </ui:ClickImage.CursorPosition>
+          <ui:ClickImage.Image>
+            <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFcAAAAQCAYAAABjleO4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHYSURBVFhH7Za9SkNBEIV9F+3zBLEUu9RiaWdtIQipxEaLNFpYRLATIvZG3yDvdOW7cuQ47l73JovEkOJj/2bO3Tk7EXd2B/vNprE3GC5NDQ2xNTdQQ0NszQ3U0BCd5h6MjpvFYtGOvv80e2nup4/f9lKQe3J61pyPr5rX+XsyphTdRbhe1E8VWgr5unfqvA//xly00NGa7+c0U4WWUkNDVDH3enLXxoHv58zNxedAg1jf091S+rPZc3s2n7+185vJbVsse9PpQzuC9h3ypXsxvvzSUM7h6OhHTo6VzaUwYnTGXB3GPBYvo6Tp8V2QL7145vrMMYTi9C03F6OYYxxrGSHQ0HcUw8gZuTxOzMlRZG4KmctIJyqHOeYzJy6aS7x3q8f/hne8tNl3fbS8I2Pnyig6kHXsRDSkHR8AHT1OCSt3LnNinC5zPRf6mOugiT5321hzGb1zHV1y1c4lxnNESn+jzFUHpc50SS+etWsyzz2O0D3I1R45+q7rM9ffXBn4b80FFQrehbqkFx/jXYdcYrV2dBdHZ1EfAzhP/bewNub+NXqI1FkfvEAZ5XtdpDSWZa3MpYvjr6QvaGCoUNeWIp3UWV/WytxapAotpYaG2JobqKHxybD5AB2GF+9O0zmHAAAAAElFTkSuQmCC" />
+          </ui:ClickImage.Image>
+          <ui:ClickImage.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:ClickImage.Target>
+        </ui:ClickImage>
+        <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Image 'mstsc.exe vm1'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitImageAppear_2">
+          <ui:WaitImageAppear.Image>
+            <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFsSURBVEhL7ZI9S8NAGMcF7Sdw1H4AndruTtpdpOk3sN0d8gFEOit2F7LoUi10ETTuagYHC4mLDm0EB4VUF4n9+zy5vDWvYjs4+IOHy13ufve/XOYwA+wvG7ZNRe1MhGH+hdOTKjQMA7IsoyZJkOp1KIrivskmUahpGuYLBSxEijfII1HYaDYdwUa1Cl3X/f5ysejOSCdRaJqmk1JVVZx1u86RvZR5JAr5+5UqFV8SrjwShV4ilnLaw3Z7OqG3eK/VcvrbjYY/ZlmWM5ZGorBULvsCvpjwjXPaLALhh+k+iN9miW6UBdyypEafYZ3ko9dnjHX6J292REUIhL1V4E13OxlcbQnR3S5wHD9gMDK8BE6oe02TR0HaGO9D4LEjNu8suoMBk1s8nQop1/maSNHfB+6p+geUblOk4nkcgN9HmBQyL7diIUt5MdXYbdFbAQYXYt4n3TZXhLjQg4/0cBQkHFCiH5Au/CV/XQh8Az29g2mp0K0aAAAAAElFTkSuQmCC" />
+          </ui:WaitImageAppear.Image>
+          <ui:WaitImageAppear.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:WaitImageAppear.Target>
+        </ui:WaitImageAppear>
+        <ui:Highlight HighlightTime="{x:Null}" Color="Gold" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Highlight_2">
+          <ui:Highlight.Target>
+            <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[elem]">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:Highlight.Target>
+        </ui:Highlight>
+        <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'IHWindowClass'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_7" Text="[&quot;[k(tab)][k(tab)][k(tab)][k(tab)][k(tab)]&quot;+&quot;someting&quot; + &quot;[k(tab)][k(tab)][k(tab)][k(enter)]&quot;]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="f79c3b7f7c075e76ebb1a85692cdea0f" Selector="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd aaname='Horizontal' cls='UIMainClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd cls='IHWindowClass' title='Input Capture Window' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+      </Sequence>
+    </FlowStep>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">340,224.02</av:Point>
+          <av:Size x:Key="ShapeSize">200,51</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Click Image 'mstsc.exe vm1'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ClickImage_9" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAABMAAAAQCAYAAAD0xERiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKrSURBVDhPVZPbThNRFIYnci0P4CFe6wMYX0CNFyaEeGGMN2i88UobRS9EJVFDImCwIUZN5BRrRVPpAQsUKrS01bZImWk77Uzn1BO+xW/XGmaaufiTyd5rf3v9a/8jLH6NQlUbaLc7aLXaME0Lr2M6fEEda3tNNJstFu1ZVhOVShWSVIYoSiiVDlCr1flMsbgHYS6wgm73kEXA9b8tHLt/wBrwiTgzreHWio5EqeOBEUjTdD5nGKYNC0XiNqxziE6niyvvqi6MNVaH8EpnTW4ZLqxalfkcndF1A4VCEULkZ4IXWO0uCnIbZydkF3ZxTnFhJ2ZqDCMRgOyZhoV6XUE614Mth6KYWFfxMGqxRmNNhAr/cHm2zMpJpgsjPQqryIoGWyObJFmuIZPJ2jP7+H0Lp/z9DoaDBt+8L5ts7fhkwwOc/mXxfGmGjYbGltPpXRs2+TnpKabDBCOVahYuzauefVFp8VhoZvTKHtjND789xaTVvMEWnJvfbCp8ydUlhWdEndHMKBq079r8svbHA7odNnDnm8X5c4rL5Qp2ixUk8zIURXUt0rwoJls7R7BiqYLry5oNG9NwbdGCf9O24bwaBde/pnN06LXHQw2+zIFtJNM2TDyQEM63IDwzIIz2gEciGHVAe/RA9wK9h/BVWaefS2yXOqeo7OykbNj+fokXLvj7IJKktjHy46jjns6/78NIC0mVOydgMpWDMDX7CdH4JiKrCc7P8LyBwZ5VgtFLnpv15kx4qWHgqYLB8QrXk32aYSpbgPD4xQyou3Bsg4NIohkFM03+jhctDE71u3P0IGJyLBxYLtdLxI27TxgWT2y72SIYFTpwCi4BnPCefFvnWVI8aJ9mx//m0IiPYeTZAVGRE0jnlxkKaGioGpa2NaxnRF6jOmdm+XwB/wF9a7NXO6cFXQAAAABJRU5ErkJggg==" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ClickImage>
+    </FlowStep>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">340,414.5</av:Point>
+          <av:Size x:Key="ShapeSize">200,51</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">440,465.5 440,514.5</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'explorer.exe'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ClickImage_10" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ClickImage>
+      <FlowStep.Next>
+        <FlowStep x:Name="__ReferenceID0">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">340,514.5</av:Point>
+              <av:Size x:Key="ShapeSize">200,51</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">440,565.5 440,595.5 460,595.5 460,604.02</av:PointCollection>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Image 'mstsc.exe vm1'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="WaitImageAppear_3">
+            <ui:WaitImageAppear.Image>
+              <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL4SURBVDhPVZRLT1NRFIVvZCw/wEcc69CB8Q8ocWBCiANjmKBx4kgbRQeikqghETDYEKMmghAR0VT6ou83bbEtUvruvb29vX3yL5bd+3JKOlhJc8/Z39lrn3Uqrf20Q1FqaLc7aLXaaDR0vHPUYdqsw73fRLPZYtGarjdRLJaQzxeQy+WRzR6iUqlyTSazD08gCmllYxvdbo9FUM+/Fk49OmSNmHK4sKji7nYdvmxnCEgwVa1znaY1GOj2RyBZbC4D2Omh0+nixsfSAMiaqUJ6W2fNB7QBsFQqcx3V1Osa0ukMXL4wJNuOjz+y2l2ky21cnCsPgNdW5AHwzFKFgSSCkNWGpqNalRFLZmB3+SFtWeyY8yh4YtdZ044mLOkjjC0XWMl8YwAkPbUqSOQ0tkmWSeVyBfF4Alan15jhl98BnDOfdDKxqXEHB+UG2zw9XxuCLoZ0njfNtFZT2X4stmtYJuD89+BQAQEISMpWdFxfVYbWc3KLR0QzpNsXQG8wZgAnP+8NFZCcKY3tiA7e+2U+6Oa6zDOjDmmGFBtaJ8s73pAB/OH+OwS7Z9Vw/5fO+RQFhUIRu5kigqkyZFkZ2KX5UYQCkQScnr5TAmayRdzeUg3gjIpbazrMfsOSuE0Kt9ld51hRCmYtNT5QAMnutsNjAHOHeVhTLUgvNUjTfeixCEid0Bpd2sON/uWYSqzzr/JsnRxQjCKRKBzugAE8OMjyx6vmExgpr7Qx9ee4876ufDoBkr4FFXZA0GA0aTy9heWvHEib08f5mljVMNq3TUC64UvLwzmU3qgYeSFjdLbI+2kUNNNoIg1/OA7p2eslUJdWh5fDSqKZbcab/NuV0TG6cNKl0GNbgyMjgMnkHsLh/lu+8+A5AymUInsEpM3iAAo3QUTAz36o8mwpOrROs6S3zMDxKRMDaQYCRhtFaMXzGt9QUVNUrIdVeOI5/kb7xAxTqTRCof5LuTw2yUDKEZ1GEPEKer0jFhVS5sQ/DcVEZFG8ZbLs9kfwH/5YKxzFD6+tAAAAAElFTkSuQmCC" />
+            </ui:WaitImageAppear.Image>
+            <ui:WaitImageAppear.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:WaitImageAppear.Target>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:WaitImageAppear>
+          <FlowStep.Next>
+            <FlowStep x:Name="__ReferenceID1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">360,604.02</av:Point>
+                  <av:Size x:Key="ShapeSize">200,51</av:Size>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'IHWindowClass'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="n" KeyModifiers="Ctrl" SpecialKey="False">
+                <ui:SendHotkey.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ebc98f7a62c7f270041824025bbd5046" Selector="&lt;wnd app='mstsc.exe' omit:cls='TscShellContainerClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd omit:aaname='Horizontal' omit:cls='UIMainClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;&lt;wnd omit:cls='IHWindowClass' omit:title='Input Capture Window' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:SendHotkey.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:SendHotkey>
+            </FlowStep>
+          </FlowStep.Next>
+        </FlowStep>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">10,17</av:Point>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_15">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Image 'mstsc.exe vm1'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitImageAppear_4">
+          <ui:WaitImageAppear.Image>
+            <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAABUAAAAPCAYAAAALWoRrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALCSURBVDhPVZTLTxNRFMZHcWUiOzeAKzdi4kYj0UTdKbowIeiCGDbEuGGlRMGFqMRHWBQVG2LURFAiEjTVFrA8K1BKsW1C6WvamU5npk/+i885p9yOXXzJpPee3z3nu9+tdOJiJ8anfsHl8aJcrqBcqqBUKuPauxQO3tu1NZiB9DLHcqzqSCZTiMcTSKVkrqOaXE5HOByBdPj4BYZ6fi/zAqtYRlguonVYrkEvjys1aNNomqEkAhmGCUM3kcko8Act6IGmMwydcc1ieFHFg1mT1T+Xhyu8h/axBCsYN2pQ0oBbxVZMh64b0LQcS5bTCAS2qtCBZ28Y/PHHKlqcdked0zp3siMbPPIRR7YO/OqPiWKxBNPMI5vV2Aq/f7Me6vjqqysiCEFJ0bSJKxNq3XpMKbBd5GmhULShDc1n0dHTx9DuD9t1RaT5kM6jiU5eryh82PVJhT2kTsnTdDrD6zy+1HweV7t6Gfpt4W8d8LZbx53vJlQ1WytKJJLYjCThC8lQFLU2OvkZje5idd2CUqetl24wNBJNomtGq0IHNdz8YsK5Uh1P3HI+X4BzIceRo3QMubJ8qIAu+fxV6NFT7QyN7cbhDhUgPdEh9VvgfRGUOqI1usi7U9aF9aVYx57G2QaahCK2vr4B6VBLGwhM0J2dKC+cc9pAUlwtoufn/gSW2t7bUNJnn8qTENi3EaxCSSNjnzDrXYFnfpnz1zmho9GygKB08yfH6nMqvdDQ8FhB41CS95Mt5PHGVtiGPnw+yt2655Y40CTycDqQ529vxETjiN2t0H2PwXES0GDQSpCA3up9xFDv8lotmwSlAnEIPQACiUfQ/DbDXlOsaJ285bdPfv6fVfJEAGmzCLZ4ih1TGrKqhsk1DYuBGP9G+4SnoZA1voCebu9mKOWMTiWQeC2Vyh6LiimT4h+KIiSyKt5+MLiNf21zpt9CSDBAAAAAAElFTkSuQmCC" />
+          </ui:WaitImageAppear.Image>
+          <ui:WaitImageAppear.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:WaitImageAppear.Target>
+        </ui:WaitImageAppear>
+        <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'mstsc.exe vm1'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_11" KeyModifiers="None" MouseButton="BTN_LEFT">
+          <ui:ClickImage.CursorPosition>
+            <ui:CursorPosition Position="Center">
+              <ui:CursorPosition.OffsetX>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:CursorPosition.OffsetX>
+              <ui:CursorPosition.OffsetY>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:CursorPosition.OffsetY>
+            </ui:CursorPosition>
+          </ui:ClickImage.CursorPosition>
+          <ui:ClickImage.Image>
+            <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB0AAAAWCAYAAAA8VJfMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA8SURBVEhL7c0xCgBADAJB///pXJviwAiRNA5svagDmVplaiVNAYxi5CmTaZfpV6adZTqJkaZbMrU6mFY9KdeC/GspPMIAAAAASUVORK5CYII=" />
+          </ui:ClickImage.Image>
+          <ui:ClickImage.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='vm1 - 52.142.28.61:3389 - Remote Desktop Connection' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:ClickImage.Target>
+        </ui:ClickImage>
+        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_7" Key="r" KeyModifiers="Win" SpecialKey="False">
+          <ui:SendHotkey.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:SendHotkey.Target>
+        </ui:SendHotkey>
+        <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_8" Text="[&quot;C:\Program Files\Internet Explorer\iexplore.exe&quot; + &quot; &quot; + &quot;google.com&quot; + &quot;[k(enter)]&quot;]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+      </Sequence>
+    </FlowStep>
+  </Flowchart>
+</Activity>
